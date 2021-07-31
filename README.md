@@ -67,6 +67,9 @@ Following notebooks contain the code for data set up.
   Note that you can pass any directory which has got images subfolder containing the images to be examined.
   
   After inferencing is completed, the output as images with bounding box drawn over them is saved in the folder called outputs. 
+  
+  ![predictions](./predictions.jpg)
+  
   The name of the output file will be sample001_pred.png where original file name was sample001.png. In case of ground truth information is also available, there will be an additional file named as sample001_orig.png
 
 ## Architecture Used
