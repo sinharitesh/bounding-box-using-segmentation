@@ -74,10 +74,10 @@ Following notebooks contain the code for data set up.
 
 ## Architecture Used
 
-
+  
 ## For advanced users
 
+  
 Learning rate finder
 
-## Method
 
