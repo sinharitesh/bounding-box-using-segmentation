@@ -25,7 +25,7 @@ Following notebooks contain the code for data set up.
 - dcm-to-png.ipynb -  Extracts png files from dicom files. Code for cleaning the corrupted images is also available.
 - png-to-mask.ipynb - Creates mask images for corresponding X Rays using information provided in excel files.
 
-### Source code set up 
+### Environment set up 
 
   Get the repository: git clone https://github.com/sinharitesh/bounding-box-by-segmentation.git
   
@@ -73,11 +73,13 @@ Following notebooks contain the code for data set up.
   The name of the output file will be sample001_pred.png where original file name was sample001.png. In case of ground truth information is also available, there will be an additional file named as sample001_orig.png
 
 ## Architecture Used
-
   
-## For advanced users
-
+  The architecture used here is unet, with backbone resnet34. Fast.ai library is used for building models which utilized Pytorch.
   
-Learning rate finder
+   
+## Learning rate finder - For advanced users
 
+Fast.ai has inbuilt facility to find the optimal learning rate, one can use the following notebook to determine learning rate.
+
+source file: learning-rate-finder.ipynb
 
