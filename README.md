@@ -24,6 +24,7 @@ Following notebooks contain the code for data set up.
 - png-to-mask.ipynb - Creates mask images for corresponding X Rays using information provided in excel files.
 
 ## Usage
+
 ### Training 
 Get the repository
   
@@ -34,10 +35,17 @@ Get the repository
 
   Download a pre trained model provided for this purpose using following in the models directory :
   
-  gdown https://drive.google.com/uc?id=1-9uL0NaYMWowQdFFVzHS6Jfv3OB_ZhQp
+  gdown https://drive.google.com/uc?id=1-9uL0NaYMWowQdFFVzHS6Jfv3OB_ZhQp.
   
-  Comeback to root directory
-
+  This will download a model named "siim-seg-011-resnet34-colab.pth".
+  
+  Comeback to root directory (one directory up)
+  Run the following command:
+  
+  python train.py --train_dir ../data-siim/train/ --use_model siim-seg-011-resnet34-colab.pth --epochs 1 --learning_rate .01
+  
+  Training will start, after the training is finished, a model named siim-segmentation-resnet34-<DDMMYYYY.-<HHMMSS>.pth will be available in models directory.
+  
 
 ## Architecture Used
 
