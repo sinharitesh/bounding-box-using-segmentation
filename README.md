@@ -26,11 +26,13 @@ Following notebooks contain the code for data set up.
 ## Usage
 
 ### Training 
-Get the repository
+
+Get the repository using git clone https://github.com/sinharitesh/bounding-box-by-segmentation.git
   
-  git clone https://github.com/sinharitesh/bounding-box-by-segmentation.git
   cd bounding-box-by-segmentation   (Change the directory)
+  
   Create a directory "models" in current folder - mkdir models 
+  
   Change directory to models
 
   Download a pre trained model provided for this purpose using following in the models directory :
