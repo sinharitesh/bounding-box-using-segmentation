@@ -74,7 +74,7 @@ Following notebooks contain the code for data set up.
 
 ## Architecture Used
   
-  The architecture used here is unet, with backbone resnet34. Fast.ai library is used for building models which utilized Pytorch.
+  The architecture used here is unet, with backbone resnet34. Fast.ai library is used for building models which utilizes Pytorch.
   
    
 ## Learning rate finder - For advanced users
@@ -82,4 +82,15 @@ Following notebooks contain the code for data set up.
 Fast.ai has inbuilt facility to find the optimal learning rate, one can use the following notebook to determine learning rate.
 
 source file: learning-rate-finder.ipynb
+
+## Citation
+
+### Dataset
+
+The BIMCV-COVID19 Data used by this challenge were originally published by the Medical Imaging Databank of the Valencia Region (BIMCV) in cooperation with The Foundation for the Promotion of Health and Biomedical Research of Valencia Region (FISABIO), and the Regional Ministry of Innovation, Universities, Science and Digital Society (Generalitat Valenciana), however the images were completely re-annotated using different annotation types. Users of this data must abide by the BIMCV-COVID19 Dataset research Use Agreement. Paper Reference: BIMCV COVID-19+: a large annotated dataset of RX and CT images from COVID-19 patients
+
+The MIDRC-RICORD Data used by this challenge were originally published by The Cancer Imaging Archive. The images were re-annotated for this challenge using a different annotation schema. Users of this data must abide by the TCIA Data Usage Policy and the Creative Commons Attribution-NonCommercial 4.0 International License under which it has been published. Attribution should include references to citations listed on the TCIA citation information page (page bottom). Paper Reference: The RSNA International COVID-19 Open Radiology Database (RICORD)
+
+### fast.ai
+  https://github.com/fastai
 
