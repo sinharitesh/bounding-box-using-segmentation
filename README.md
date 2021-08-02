@@ -27,7 +27,7 @@ Following notebooks contain the code for data set up.
 
 ### Environment set up 
 
-  Get the repository: git clone https://github.com/sinharitesh/bounding-box-by-segmentation.git
+  Get the repository: git clone https://github.com/sinharitesh/bounding-box-using-segmentation.git
   
   Change the directory: cd bounding-box-by-segmentation   
   
