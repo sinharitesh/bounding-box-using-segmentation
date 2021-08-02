@@ -13,7 +13,8 @@ import random
 import fastai
 import matplotlib.pyplot as plt
 from tqdm import tqdm
-from common_fns import *
+from inference_fns import *
+import time
 
 
 test_path  =  './test/'
@@ -22,7 +23,7 @@ test_path  =  './test/'
 def parse_args():
     parser = argparse.ArgumentParser(description='Inference')
     parser.add_argument('--test_dir', type=str , default = "./test/" , help='directory containing the images on which inference is required.')
-    parser.add_argument('--mode', type=str ,default = "generate-images",  help='mode - created images with bounding boxes drawn over')
+    parser.add_argument('--mode', type=str ,default = "generate-images",  help='mode - create images with bounding boxes drawn over')
     args = parser.parse_args()
     return(args)
 
@@ -33,13 +34,15 @@ if __name__ == "__main__":
     test_path  =  args.test_dir + "images/"  #  './test/'
     if not os.path.exists("./output/"):
         os.makedirs("./output")
-
+    start_time = time.time()
     test_images = os.listdir(test_path)
     for i, img in enumerate(test_images):
         imgpath = test_path + img
         save_original_image(imgpath)
         save_predicted_image(imgpath)
-    print("Inference completed for:", i, "images. Source:", test_path) 
+    end_time = time.time()
+    time_taken = round(end_time - start_time, 2)
+    print("Inference completed for:", i, "images in", time_taken, "seconds . Source:", test_path, "Target:", "output") 
     
                 
                 
