@@ -1,4 +1,4 @@
-# Bounding Box generation using Image Segmentation.
+# Bounding Box prediction using Deep Learning segmentation technique
 
 This repository provides training and inferencing modules for Pneumonia Detection. This aim of this project is to provide a cookie cutter approach to generate bounding box predictions for Chest X Rays.
 
