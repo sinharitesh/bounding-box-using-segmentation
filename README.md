@@ -39,6 +39,8 @@ Following notebooks contain the code for data set up.
 
   Download a pre trained model provided for this purpose using following in the models directory :
   
+  pip install gdown
+  
   gdown https://drive.google.com/uc?id=1-9uL0NaYMWowQdFFVzHS6Jfv3OB_ZhQp.
   
   Above will download a model named "siim-seg-011-resnet34-colab.pth".
