@@ -34,6 +34,7 @@ def get_subset_data(path):
     return fnames[0:20]
 
 def acc_seg(inp, targ):
+    if ((inp is None) and (targ is None)): return(1)
     if ((inp is None) or (targ is None)): return(0)
     targ = targ.squeeze(1)
     mask = targ != void_code
