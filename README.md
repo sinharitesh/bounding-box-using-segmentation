@@ -33,6 +33,8 @@ Following notebooks contain the code for data set up.
   
   Create a directory "models" in current folder: mkdir models 
   
+  pip install -r requirements.txt
+  
   Change directory to models: cd models
 
   Download a pre trained model provided for this purpose using following in the models directory :
