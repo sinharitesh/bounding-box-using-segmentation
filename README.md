@@ -41,7 +41,7 @@ Following notebooks contain the code for data set up.
   
   pip install gdown
   
-  gdown https://drive.google.com/uc?id=1-9uL0NaYMWowQdFFVzHS6Jfv3OB_ZhQp.
+  gdown https://drive.google.com/uc?id=1-9uL0NaYMWowQdFFVzHS6Jfv3OB_ZhQp
   
   Above will download a model named "siim-seg-011-resnet34-colab.pth".
   
